@@ -1,0 +1,5 @@
+C:\Users\MZX\RiderProjects\VentaVideojuegos\VentaVideojuegos\bin\Debug\VentaVideojuegos.exe
+C:\Users\MZX\RiderProjects\VentaVideojuegos\VentaVideojuegos\bin\Debug\VentaVideojuegos.pdb
+C:\Users\MZX\RiderProjects\VentaVideojuegos\VentaVideojuegos\obj\Debug\VentaVideojuegos.csprojAssemblyReference.cache
+C:\Users\MZX\RiderProjects\VentaVideojuegos\VentaVideojuegos\obj\Debug\VentaVideojuegos.exe
+C:\Users\MZX\RiderProjects\VentaVideojuegos\VentaVideojuegos\obj\Debug\VentaVideojuegos.pdb
