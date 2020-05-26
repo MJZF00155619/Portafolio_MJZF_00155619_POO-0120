@@ -1,0 +1,65 @@
+CREATE TABLE USUARIO (
+	id_usuario serial primary key not null,
+	nombre varchar (50) not null,
+	contraseña varchar (30) not null,
+	admon boolean not null
+)
+
+CREATE TABLE INVENTARIO (
+	id_articulo serial primary key not null,
+	nombre_art varchar (50) not null,
+	descripcion varchar (200) not null,
+	precio money not null,
+	stock integer not null
+)
+
+CREATE TABLE PEDIDO (
+	id_pedido serial primary key not null
+)
+
+ALTER TABLE PEDIDO 
+ADD Codigo_articulo integer
+
+ALTER TABLE PEDIDO 
+ADD CONSTRAINT FK_Inv
+FOREIGN KEY (Codigo_articulo)
+REFERENCES INVENTARIO(id_articulo)
+
+ALTER TABLE PEDIDO
+ADD Codigo_usuario integer
+
+ALTER TABLE PEDIDO
+ADD CONSTRAINT FK_USER
+FOREIGN KEY (Codigo_usuario)
+REFERENCES USUARIO (id_usuario)
+
+ALTER TABLE PEDIDO 
+ADD Column cantidad integer
+
+
+INSERT INTO USUARIO (nombre,contraseña,admon) VALUES ('MauricioZ','manzana1', true)
+INSERT INTO INVENTARIO (nombre_art,descripcion,precio,stock) VALUES ('Resident Evil','Juego para plataforma playstation',24.99,1000)
+INSERT INTO PEDIDO (Codigo_articulo,Codigo_usuario,cantidad) VALUES (1,1,4)
+
+SELECT * FROM PEDIDO
+SELECT * FROM USUARIO
+SELECT * FROM INVENTARIO
+
+SELECT id_pedido, codigo_articulo, nombre_user, cantidad, nombre_art, precio FROM PEDIDO inner join INVENTARIO on codigo_articulo = id_articulo
+
+ALTER TABLE PEDIDO 
+DROP COLUMN Codigo_usuario
+
+ALTER TABLE USUARIO 
+DROP COLUMN id_usuario
+
+ALTER TABLE PEDIDO
+ADD nombre_user varchar (50)
+
+ALTER TABLE PEDIDO
+ADD CONSTRAINT FK_USER
+FOREIGN KEY (nombre_user)
+REFERENCES USUARIO (nombre)
+
+DELETE FROM PEDIDO 
+WHERE id_pedido = 4
