@@ -1,0 +1,5 @@
+C:\Users\MZX\Desktop\repositorios\Portafolio_MJZF_00155619_POO-0120\Pre_Parcial3\Pre_Parcial3\Pre_Parcial3\bin\Debug\Pre_Parcial3.exe
+C:\Users\MZX\Desktop\repositorios\Portafolio_MJZF_00155619_POO-0120\Pre_Parcial3\Pre_Parcial3\Pre_Parcial3\bin\Debug\Pre_Parcial3.pdb
+C:\Users\MZX\Desktop\repositorios\Portafolio_MJZF_00155619_POO-0120\Pre_Parcial3\Pre_Parcial3\Pre_Parcial3\obj\Debug\Pre_Parcial3.csprojAssemblyReference.cache
+C:\Users\MZX\Desktop\repositorios\Portafolio_MJZF_00155619_POO-0120\Pre_Parcial3\Pre_Parcial3\Pre_Parcial3\obj\Debug\Pre_Parcial3.exe
+C:\Users\MZX\Desktop\repositorios\Portafolio_MJZF_00155619_POO-0120\Pre_Parcial3\Pre_Parcial3\Pre_Parcial3\obj\Debug\Pre_Parcial3.pdb
